@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="55dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Логин" />
+
+        <EditText
+            android:id="@+id/eLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Введите логин" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пароль" />
+
+        <EditText
+            android:id="@+id/ePass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text|textCapCharacters"
+            android:hint="Введите пароль"
+            android:password="true" />
+
+        <Button
+            android:id="@+id/btngo"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Войти" />
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/btnreg"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Регистрация" />
+    </LinearLayout>
+
+</LinearLayout>
