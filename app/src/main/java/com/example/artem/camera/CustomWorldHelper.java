@@ -55,9 +55,9 @@ public class CustomWorldHelper {
         sharedWorld.setDefaultImage(R.drawable.holder);
 
         ArrayList<Map<String, Object>> objects = objArray;
-        latitude = MainActivity.latitude;
-        longitude = MainActivity.longitude;
-        altitude = MainActivity.altitude;
+        latitude = 48.806813;
+        longitude = 44.744190;
+        altitude = 18.0;
         usedObjects = new ArrayList<Map<String, Object>>();
         sharedWorld.setGeoPosition(latitude, longitude);
         double distanceToObject = (double) MainActivity.seekRadius;
@@ -76,7 +76,7 @@ public class CustomWorldHelper {
                         m = new HashMap<String, Object>();
 
                         GeoObject gObject = new GeoObject(i);
-                        gObject.setGeoPosition(a, b,c);
+                        gObject.setGeoPosition(a, b);
                         Map<String,Object> linkYear = new HashMap();
                         linkYear = (Map)objects.get(i).get("urls");
                         Map.Entry<String,Object> entry = linkYear.entrySet().iterator().next();

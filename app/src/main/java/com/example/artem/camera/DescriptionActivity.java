@@ -57,7 +57,7 @@ public class DescriptionActivity extends ActionBarActivity {
         tvDist = (TextView)findViewById(R.id.oDist);
         String formatted="";
         if(!distance.equals("?")) {
-            formatted = new DecimalFormat("#0.00").format(Double.valueOf(distance) * 1000);
+            formatted = new DecimalFormat("#0.00").format(Double.valueOf(distance));
             formatted = formatted.split(",")[0];
         } else {
             formatted = distance;
